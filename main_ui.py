@@ -3,7 +3,6 @@ from tkinter import filedialog, scrolledtext, messagebox, ttk
 from PIL import Image, ImageTk
 import os, sys
 import threading
-from tkinterdnd2 import DND_FILES, TkinterDnD
 from utils import (
     load_existing_metadata,
     save_sd_metadata_to_png,
@@ -168,7 +167,7 @@ def drop(event):
     if os.path.isfile(file_path):
         select_image(file_path)
 
-root = TkinterDnD.Tk()
+root = tk.Tk()
 root.title("Metadata Inserter")
 root.configure(bg="#e6f2ff")
 
@@ -298,8 +297,5 @@ loading_label.pack(pady=5, anchor="w")
 
 progress_bar = ttk.Progressbar(right_frame, mode='indeterminate')
 progress_bar.pack_forget()
-
-root.drop_target_register(DND_FILES)
-root.dnd_bind('<<Drop>>', drop)
 
 root.mainloop()
