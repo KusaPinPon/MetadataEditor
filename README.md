@@ -3,9 +3,10 @@
 This tool allows you to edit image metadata, such as checkpoints, LORAs. So far windows only, working on more options.
 ![Image of the UI](https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/dfe6ce9f-755d-461a-86fc-ca352174d9a2/width=525/dfe6ce9f-755d-461a-86fc-ca352174d9a2.jpeg) 
 
-Just clone and run `pyton main_ui.py`
+1. Clone or download the repo
+2. Install the libraris with `pip install -r /path/to/requirements.txt.` There are just two, so I don't think you would need a virtual environment
+3. Run `pyton main_ui.py`
 
-Install the missing libraris with `pip install ...`
 
 ## Features
 
